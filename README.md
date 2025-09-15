@@ -6,7 +6,7 @@
 
 ## Template ToDo list
 - [x] Create a new [IntelliJ Platform Plugin Template][template] project.
-- [ ] Get familiar with the [template documentation][template].
+- [x] Get familiar with the [template documentation][template].
 - [ ] Adjust the [pluginGroup](./gradle.properties) and [pluginName](./gradle.properties), as well as the [id](./src/main/resources/META-INF/plugin.xml) and [sources package](./src/main/kotlin).
 - [ ] Adjust the plugin description in `README` (see [Tips][docs:plugin-description])
 - [ ] Review the [Legal Agreements](https://plugins.jetbrains.com/docs/marketplace/legal-agreements.html?from=IJPluginTemplate).
@@ -43,6 +43,16 @@ To keep everything working, do not remove `<!-- ... -->` sections.
 
   Download the [latest release](https://github.com/nadia-tarashkevich/JCEF-editor-tab-plugin/releases/latest) and install it manually using
   <kbd>Settings/Preferences</kbd> > <kbd>Plugins</kbd> > <kbd>⚙️</kbd> > <kbd>Install plugin from disk...</kbd>
+
+## How to open the JCEF-based editor tab
+
+- From the IDE menu: Tools > Open JCEF Webview Tab. This creates and opens a temporary .jcef file in an editor tab using the custom JCEF-based editor.
+- Alternatively: create or open any file with the .jcef extension in your project; it will open in the JCEF webview editor.
+
+Inside the webview, you will see the text:
+- Hello world
+
+Note: JCEF must be supported by your IDE/platform. If JCEF is unavailable, the editor shows a message instead of the webview.
 
 
 ---
